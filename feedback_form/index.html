@@ -1,0 +1,63 @@
+<form class="user-signup" method="get" action="#">
+        <fieldset>
+          <legend>Your Information</legend>
+          <label for="title">
+            <input name="title" type="radio" value="Mr"> Mr
+          </label>
+          <label for="name">
+            <input name="title" type="radio" value="Mrs."> Mrs
+          </label>
+          <label for="name">
+            <input name="title" type="radio" value="Miss"> Miss
+          </label>
+        <p>
+        <div>
+        <label for="firstname">First Name
+          <input name="firstname" type="text">
+        </div>
+        <div>
+          <label for="lastname">Last Name
+          <input name="lastname" type="text">
+        </div>
+        <div>
+        <label for="Email">Email
+          <input name="Email" type="text" required
+                 pattern="\[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\" placeholder="john-doe@domain.com">
+        </label>
+          </div>
+        <div>
+          <label for="PhoneNumber">Phone Number
+            <input name="PhoneNumber" type="tel" required
+                   pattern="((\(\d{3}\) ?)|(\d{3}-))?\d{3}-\d{4}" placeholder="999-999-9999">
+          </label>
+          </div>
+        <div>
+          <label for="country">Country
+          <select name="country">
+            <option value="USA">USA</option>
+            <option value="CA">CA</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+            <option value="UK">UK</option>
+          </select>
+        </div>
+          <div>
+            <label for="comment">Leave a comment:
+            <textarea id="comment" cols="25" rows="10">
+            </textarea>
+            </label>
+              </div>
+            <div>
+          </div>
+        </fiedset> 
+        <section>
+          <div>
+            <label for="agreement">
+              <input type="checkbox">
+              I agree to the <a href="#">terms</a>
+            </label>
+          </div>
+          <button type="submit">Signup</button>
+          <button type="reset">Reset Form</button>
+          </section>
+      </form>
